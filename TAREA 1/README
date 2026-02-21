@@ -1,0 +1,118 @@
+#  Lista Doblemente Enlazada en Python
+
+## Descripción del Proyecto
+
+Este programa implementa una **Lista_Doblemente_Enlazada** en Python.
+
+Permite:
+
+- Insertar estudiantes al inicio
+- Insertar estudiantes al final
+- Eliminar estudiantes por carnet
+- Mostrar la lista en consola
+- Generar una representación gráfica automática en formato PNG utilizando Graphviz
+
+Cada nodo representa un estudiante con los siguientes datos:
+
+- Carnet
+- Nombre
+- Apellido
+
+---
+
+## Estructura del Programa
+
+El programa está dividido en dos clases principales:
+
+###  Clase `Nodo`
+
+Representa cada elemento de la lista.
+
+#### Atributos:
+- `carnet` → Identificador único del estudiante
+- `nombre` → Nombre del estudiante
+- `apellido` → Apellido del estudiante
+- `siguiente` → Apunta al siguiente nodo
+- `anterior` → Apunta al nodo anterior
+
+#### Método:
+- `texto()` → Devuelve una representación en texto del nodo
+
+---
+
+### Clase `Lista_Doble`
+
+Administra la lista doblemente enlazada.
+
+#### Atributos:
+- `inicio` → Primer nodo de la lista
+- `final` → Último nodo de la lista
+- `contador_img` → Controla el nombre de las imágenes generadas
+
+---
+
+##  Métodos Implementados
+
+### `insertar_al_principio(carnet, nombre, apellido)`
+
+Inserta un nuevo nodo al inicio de la lista.
+
+Casos:
+- Si la lista está vacía → inicio y final apuntan al nuevo nodo
+- Si no → el nuevo nodo se conecta antes del actual inicio
+
+---
+
+### `insertar_al_final(carnet, nombre, apellido)`
+
+Inserta un nuevo nodo al final.
+
+Casos:
+- Si la lista está vacía → inicio y final apuntan al nuevo nodo
+- Si no → se enlaza después del nodo final actual
+
+---
+
+### `eliminar_por_valor(dato)`
+
+Elimina un nodo según el carnet ingresado.
+
+Casos manejados:
+1. Lista con un solo nodo
+2. Eliminación al inicio
+3. Eliminación al final
+4. Eliminación en medio de la lista
+
+Devuelve:
+- `True` si se eliminó correctamente
+- `False` si el carnet no existe
+
+---
+
+### `mostrar_lista()`
+
+Imprime la lista en formato:
+
+None <- nodo1 <-> nodo2 <-> nodo3 -> None
+
+
+---
+
+### `graficar(nombre_archivo)`
+
+Genera una imagen PNG de la lista usando Graphviz.
+
+Características:
+- Dirección horizontal (Left to Right)
+- Flechas "sig" y "ant"
+- Representación visual de punteros `None`
+- Cada operación crea una nueva imagen incremental:
+  - lista_1.png
+  - lista_2.png
+  - lista_3.png
+  - etc.
+
+---
+
+
+
