@@ -1,0 +1,121 @@
+-------------------------------------
+Josué David Girón Elías
+9490-22-11286
+participación 100%
+--------------------------------------
+TAREA 3.
+
+Este programa implementa un Árbol Binario de Búsqueda (ABB) en Python mediante una interfaz de línea de comandos (CLI).
+El sistema permite al usuario insertar, buscar y eliminar valores dentro del árbol, así como cargar datos desde un archivo externo y generar la representación gráfica del árbol utilizando Graphviz.
+
+El objetivo del programa es demostrar el funcionamiento de un ABB, su manipulación dinámica y su visualización.
+
+## El programa cumple con los siguientes requisitos:
+
+
+1. Interfaz de línea de comandos
+
+2. Inserción de nodos
+
+3. Búsqueda de nodos
+
+4. Eliminación de nodos
+
+5. Carga desde archivo CSV/TXT
+
+6. Visualización con Graphviz
+
+7. Código modular y documentado
+
+## Estructura del programa
+
+1. Insertar
+
+Permite agregar un número al árbol.
+
+Reglas:
+
+Si es menor → izquierda
+
+Si es mayor → derecha
+
+No permite duplicados
+
+2. Buscar
+
+Permite verificar si un número existe en el árbol.
+
+3. Permite eliminar un nodo.
+
+Casos posibles:
+
+Nodo sin hijos
+
+Nodo con un hijo
+
+Nodo con dos hijos
+
+En el tercer caso se usa el sucesor.
+
+4. Recorrido Inorden
+
+Muestra los valores ordenados.
+
+5. Cargar desde archivo
+
+El programa permite cargar datos desde un archivo.
+
+Formatos aceptados:
+
+.csv
+
+.txt
+
+6. Visualización con Graphviz
+
+El programa genera una imagen PNG del árbol.
+
+Se usa la librería:
+
+graphviz
+
+Ejemplo de salida:
+
+arbol_binario.png
+
+7. Archivos de ejemplo
+
+Se incluyen tres archivos CSV para pruebas.
+
+
+## Uso del programa
+
+Pasos:
+
+Ejecutar el archivo
+
+python arbol.py
+
+Seleccionar una opción
+
+Insertar números o cargar archivo, si se carga el archivo procure poner la ruta completa donde esta guardado
+por ejemplo: C:\Users\Usuario\OneDrive\Desktop\PROGRA III\TAREA 3\ejemplo2.csv
+
+Ver imagen generada
+
+
+## Conclusión
+
+El programa demuestra el funcionamiento de un Árbol Binario de Búsqueda mediante una interfaz interactiva.
+
+Se implementaron correctamente:
+
+Inserción
+
+Búsqueda
+
+Eliminación
+
+Carga desde archivo
+
+Visualización con Graphviz
