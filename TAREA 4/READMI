@@ -1,0 +1,86 @@
+-------------------------------------
+Josué David Girón Elías
+9490-22-11286
+participación 100%
+--------------------------------------
+
+# Descripción 
+
+Este programa implementa un Árbol AVL en Python, el cual es una estructura de datos basada en un Árbol Binario de Búsqueda (ABB) que se mantiene automáticamente balanceado mediante rotaciones.
+
+El sistema permite al usuario interactuar mediante una interfaz de línea de comandos (CLI) para realizar distintas operaciones sobre el árbol.
+
+# Funcionalidades
+
+El programa permite:
+
+Insertar números en el árbol
+Buscar un número en el árbol
+Eliminar un número
+Cargar datos desde un archivo CSV
+Mostrar el recorrido inorden (ordenado)
+Generar una visualización del árbol usando Graphviz
+
+# Estructura del programa
+
+El sistema está organizado en clases:
+
+Nodo: representa cada nodo del árbol
+ABB: contiene la lógica base de un árbol binario de búsqueda
+AVL: hereda de ABB y agrega el balanceo automático
+
+# Requisitos
+
+Antes de ejecutar el programa, debes tener instalado:
+
+1. Python
+
+Versión recomendada: Python 3.x
+
+2. Librería Graphviz en Python
+
+Instalar con:
+
+3. Graphviz (programa en Windows)
+
+# Cómo ejecutar el programa
+
+Abrir la carpeta del proyecto en VS Code
+Abrar la terminal
+Ejecutar:
+
+# Menú del sistema
+
+Al ejecutar el programa aparecerá el siguiente menú:
+
+Insertar datos manualmente
+
+1. Insertar un número: Selecciona la opción 1 y escribe números para construir el árbol.
+
+2. Buscar un número: Selecciona la opción 2 e ingresa el valor que deseas buscar.
+
+3. Eliminar un número: Selecciona la opción 3 para eliminar un valor del árbol.
+
+4. Cargar datos desde CSV: Selecciona la opción 4 y escribe el nombre del archivo.
+
+Ejemplo:
+
+Archivos CSV de prueba
+
+ejemplo1.csv
+ejemplo2.csv
+ejemplo3.csv
+
+5. Visualización del árbol: Selecciona la opción 5 y escribe un nombre:
+
+6. Salir: termina el programa 
+
+# Problemas comunes
+
+Error al cargar CSV
+No usar comillas en la ruta
+Asegurarse que el archivo esté en la misma carpeta
+
+No se genera la imagen
+Verificar que Graphviz esté instalado correctamente
+Reiniciar VS Code
